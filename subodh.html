@@ -1,0 +1,294 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Subodh Das :: Developer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap"
+            rel="stylesheet">
+        <style>
+            :root {
+                --background: #1a1a1a;
+                --text-primary: #e0e0e0;
+                --text-secondary: #9e9e9e;
+                --accent: #00ff99;
+                --border-color: #333;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: var(--background);
+                color: var(--text-primary);
+                font-family: 'Source Code Pro', monospace;
+                line-height: 1.7;
+                padding: 20px;
+            }
+
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .header {
+                margin-bottom: 4rem;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+                color: var(--accent);
+                margin-bottom: 0.5rem;
+            }
+
+            .header h1 .cursor {
+                display: inline-block;
+                width: 10px;
+                height: 2rem;
+                background-color: var(--accent);
+                animation: blink 1s step-end infinite;
+            }
+
+            @keyframes blink {
+
+                from,
+                to {
+                    background-color: transparent
+                }
+
+                50% {
+                    background-color: var(--accent);
+                }
+            }
+
+            .header p {
+                font-size: 1rem;
+                color: var(--text-secondary);
+                max-width: 60ch;
+            }
+
+            .section {
+                margin-bottom: 3rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+                color: var(--text-primary);
+                margin-bottom: 1.5rem;
+                border-bottom: 1px solid var(--border-color);
+                padding-bottom: 0.5rem;
+            }
+
+            .link-list a {
+                display: inline-block;
+                color: var(--text-primary);
+                text-decoration: none;
+                margin-right: 20px;
+                margin-bottom: 10px;
+                font-size: 1rem;
+            }
+
+            .link-list a:before {
+                content: '>';
+                margin-right: 8px;
+                color: var(--accent);
+            }
+
+            .link-list a:hover {
+                text-decoration: underline;
+                color: var(--accent);
+            }
+
+            .about-grid {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                gap: 1rem;
+                align-items: start;
+            }
+
+            .about-grid .label {
+                color: var(--text-secondary);
+                font-weight: 600;
+            }
+
+            .skills-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 2rem;
+            }
+
+            .skill-category h3 {
+                color: var(--accent);
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
+            }
+
+            .skill-category .link-list a {
+                display: block;
+                /* Make links appear on new lines */
+                margin-bottom: 8px;
+                margin-right: 0;
+            }
+
+            /* New styles for the contact form */
+            .contact-form {
+                max-width: 600px;
+            }
+
+            .form-group {
+                margin-bottom: 1.5rem;
+            }
+
+            .form-group label {
+                display: block;
+                color: var(--text-secondary);
+                margin-bottom: 0.5rem;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                width: 100%;
+                padding: 10px;
+                background-color: var(--border-color);
+                border: 1px solid #444;
+                color: var(--text-primary);
+                font-family: 'Source Code Pro', monospace;
+                font-size: 1rem;
+                border-radius: 4px;
+            }
+
+            .submit-btn {
+                background-color: var(--accent);
+                color: var(--background);
+                padding: 12px 20px;
+                border: none;
+                font-family: 'Source Code Pro', monospace;
+                font-weight: 600;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+
+            footer {
+                margin-top: 4rem;
+                text-align: center;
+                color: var(--text-secondary);
+                font-size: 0.9rem;
+                border-top: 1px solid var(--border-color);
+                padding-top: 2rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>subodh-das<span class="cursor"></span></h1>
+                <p>I can do whatever you need, as long as I'm learning something or getting paid well enough for my time
+                    -- preferably both.</p>
+            </header>
+
+            <section class="section">
+                <div class="link-list">
+                    <!-- Point this to your resume file. Place resume.pdf in the same folder. -->
+                    <a href="SubodhDasResume2026.pdf" download  target="_blank" rel="noopener noreferrer">RESUME</a>
+
+                    <!-- Replace with your actual GitHub profile URL -->
+                    <a href="https://github.com/lemonCantBite" target="_blank" rel="noopener noreferrer">GITHUB</a>
+
+                    <a href="#hire-me">HIRE ME</a>
+
+                    <!-- Replace with your actual YouTube channel URL -->
+                    <a href="https://www.youtube.com/@yournontechguy" target="_blank" rel="noopener noreferrer">YOUTUBE</a>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <span class="label">Name:</span> <span>Subodh Das</span>
+                    <span class="label">Focus:</span> <span>Backend & Frontend Development</span>
+                    <span class="label">Philosophy:</span> <span>Clean code and continuous learning.</span>
+                    <span class="label">Weakness:</span> <span>Übermensch</span>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Projects</h2>
+                <div class="link-list">
+                    <a href="#">Project One: Backend API</a>
+                    <a href="#">Project Two: Frontend App</a>
+                    <a href="#">Project Three: Full-Stack Solution</a>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Core & Languages</h3>
+                        <div class="link-list">
+                            <a href="#">JavaScript (ES6+) / TypeScript</a>
+                            <a href="#">Python</a>
+                            <a href="#">Node.js</a>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks & Libraries</h3>
+                        <div class="link-list">
+                            <a href="#">React</a>
+                            <a href="#">Express.js</a>
+                            <a href="#">GraphQL / REST APIs</a>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>DevOps & Cloud</h3>
+                        <div class="link-list">
+                            <a href="#">Docker & Kubernetes</a>
+                            <a href="#">CI/CD (GitHub Actions)</a>
+                            <a href="#">AWS / GCP (Basics)</a>
+                            <a href="#">Terraform (IaC)</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- "Hire Me" Contact Form Section -->
+            <section id="hire-me" class="section">
+                <h2 class="section-title">Hire Me</h2>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                    Interested in working together? Fill out the form below and I'll get back to you.
+                </p>
+                <!-- 
+                    ACTION: 
+                    1. Go to https://formspree.io/ and create a new form.
+                    2. They will give you a URL. Replace 'YOUR_FORM_ID' below with your actual Formspree URL.
+                -->
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">> Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">> Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">> Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">SEND MESSAGE</button>
+                </form>
+            </section>
+
+            <footer>
+                <p>&copy; 2026 Subodh Das. All systems operational.</p>
+            </footer>
+        </div>
+    </body>
+
+</html>
